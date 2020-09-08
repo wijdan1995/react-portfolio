@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Contact = ({ data }) => {
-   const [url, setUrl] = useState('mailto:test@example.com?subject=subject&body=body');
+   // const [url, setUrl] = useState('mailto:wijdan.w.k@outlook.sa?subject=subject&body=body');
    const [name, setName] = useState('');
    const [subject, setSubject] = useState('');
    const [email, setEmail] = useState('');
@@ -11,7 +11,7 @@ const Contact = ({ data }) => {
 
     const handleClick = (e) => {
        e.preventDefault();
-      window.open(`mailto:${email}?subject=${subject}&body=${name}: ${message}`);
+      window.open(`mailto:wijdan.w.k@outlook.sa?subject=${subject}&body=${name}: ${email} / ${message}`);
     }
     
 
@@ -35,7 +35,7 @@ const Contact = ({ data }) => {
          </div>
 
          <div className="row">
-            <div className="eight columns">
+            <div className="twelve columns">
 
                <form id="contactForm" name="contactForm">
 					<fieldset>
@@ -76,22 +76,21 @@ const Contact = ({ data }) => {
            </div>
 
 
-            <aside className="four columns footer-widgets">
+            {/* <aside className="four columns footer-widgets">
                <div className="widget widget_contact">
 
-					   <h4>Address and Phone</h4>
+					   <h4>Address</h4>
 					   <p className="address">
 						   {data?.name}<br />
 						   {data?.address.street} <br />
-						   {data?.address.city}, {data?.address.state} {data?.address.zip}<br />
-						   <span>{data?.phone}</span>
+						   {data?.address.city}, {data?.address.state}<br />
 					   </p>
 				   </div>
 
                <div className="widget widget_tweets">
 
 		         </div>
-            </aside>
+            </aside> */}
       </div>
    </section>
     );

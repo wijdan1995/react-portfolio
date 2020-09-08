@@ -664,6 +664,7 @@ call-to-action .button {
 #testimonials .text-container {
    padding-top: 96px;
    padding-bottom: 66px;
+   background-color: rgba(0, 0, 0, 0.25);
 }
 #testimonials h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
